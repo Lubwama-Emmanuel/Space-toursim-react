@@ -1,0 +1,153 @@
+.launch_section {
+  background-image: linear-gradient(rgb(11, 13, 23, 0.7), rgb(11, 13, 23, 0.7)),
+    url("../../../public/Bitmap_4.png");
+  background-size: cover;
+  /* height: 66.3rem; */
+  height: 100vh;
+}
+
+.content {
+  margin-left: 13rem;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+}
+
+.launch_con {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dots {
+  /* background-color: black; */
+  width: 10%;
+}
+
+.dot {
+  /* background-color: #fff; */
+  position: relative;
+  text-align: center;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100rem;
+  border: 1px solid #fff;
+  color: black;
+}
+
+.dot p {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Bellefair", serif;
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+.active {
+  background-color: #fff;
+}
+
+.active p {
+  color: black;
+}
+
+.dot:not(:last-child) {
+  margin-bottom: 1.4rem;
+}
+
+.launch_details {
+  width: 43%;
+  height: 35rem;
+}
+
+.terminalogy {
+  text-transform: uppercase;
+}
+
+.tech_name {
+  color: #fff;
+  font-family: "Bellefair", serif;
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.desc {
+  width: 100%;
+}
+
+.launch_image {
+  position: relative;
+  width: 50%;
+}
+
+.img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 75%;
+  height: 36rem;
+}
+
+@media (max-width: 950px) {
+  .launch_section {
+    height: auto;
+  }
+  .launch_con {
+    flex-direction: column-reverse;
+    /* justify-content: flex-end; */
+    /* text-align: center; */
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: 5rem auto;
+  }
+
+  .dot:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .launch_image {
+    width: 100%;
+  }
+  .img {
+    position: static;
+    width: 100%;
+  }
+  .launch_details {
+    width: 60%;
+    margin: 0 auto;
+    height: 28rem;
+    text-align: center;
+
+    order: -1;
+  }
+  .tech_name {
+    font-size: 4rem;
+  }
+
+  .heading_custom {
+    color: red;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .launch_details {
+    width: 90%;
+    height: auto;
+    margin-bottom: 3.9rem;
+  }
+}

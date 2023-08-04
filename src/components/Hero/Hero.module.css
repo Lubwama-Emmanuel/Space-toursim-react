@@ -1,0 +1,78 @@
+.hero {
+  background-image: url("../../../public/Bitmap.png");
+  background-size: cover;
+  height: 100vh;
+  /* height: 66rem; */
+}
+
+.space_sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15rem;
+}
+
+.space {
+  /* background-color: orange; */
+  width: 37rem;
+}
+
+.space h4 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.space h2 {
+  font-size: 12rem;
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.space p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+.space_shape {
+  background-color: #fff;
+  width: 200px;
+  height: 200px;
+  align-self: self-end;
+  text-align: center;
+  border-radius: 100px;
+  position: relative;
+}
+
+.space_explore {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Bellefair", serif;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+@media (max-width: 950px) {
+  .space_sec {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
+  .space_shape {
+    align-self: center;
+  }
+
+  .space {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 6rem;
+  }
+}
